@@ -1,0 +1,29 @@
+* {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template: 125px 4fr 20px / 1fr 4fr;
+}
+
+header {
+  background-color: blue;
+  grid-column: 2 / 3;
+}
+
+main {
+  background-color: red;
+}
+
+aside {
+  background-color: yellowgreen;
+  grid-row: 1 / 4;
+}
+
+footer {
+  background-color: blueviolet;
+  grid-column: 2 / 3;
+}
