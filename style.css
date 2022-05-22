@@ -23,7 +23,7 @@ main {
 aside {
   display: grid;
   background-color: yellowgreen;
-  grid-template-rows: 50px 30% auto;
+  grid-template-rows: 75px repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
   grid-row: 1 / 4;
 }
