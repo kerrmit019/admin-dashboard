@@ -1,7 +1,9 @@
-* {
-  height: 100%;
+html,
+body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 body {
@@ -19,8 +21,22 @@ main {
 }
 
 aside {
+  display: grid;
   background-color: yellowgreen;
+  grid-template-rows: 50px 30% auto;
+  gap: 25px;
   grid-row: 1 / 4;
+}
+
+aside div {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  /* column-gap: minmax(5px, 10px); */
+  column-gap: 10px;
+  row-gap: 15px;
+  align-content: flex-start;
+  padding: 10px;
+  border: 1px solid brown;
 }
 
 footer {
