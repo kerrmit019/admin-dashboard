@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+
+    <link />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/6db53d092c.js"
       crossorigin="anonymous"
@@ -13,7 +22,40 @@
     <title>TOP admin-dashboard</title>
   </head>
   <body>
-    <header>This is the header</header>
+    <header>
+      <div class="search">
+        <label for="searchbar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input type="search" name="searchbar" id="searchbar" />
+        </label>
+      </div>
+      <div class="logged-in-user">
+        <i class="fa-solid fa-bell"></i>
+
+        <img
+          class="profile-pic-small"
+          src="./imgs/profilepic.png"
+          alt="SK-profile-pic"
+        />
+        Sarah Kerr
+      </div>
+      <div class="welcome-user">
+        <img
+          class="profile-pic-medium"
+          src="./imgs/profilepic.png"
+          alt="SK-profile-pic"
+        />
+
+        Hi there, Sarah Kerr
+      </div>
+
+      <div class="post-buttons">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
+    </header>
     <aside>
       <div class="sidebar-heading">
         <i class="fa-solid fa-gauge-high"></i> Dashboard
@@ -33,6 +75,10 @@
       </div>
     </aside>
     <main>This is the main area</main>
-    <footer>This is the footer</footer>
+    <footer>
+      <a href="https://www.freepik.com/vectors/career-jobs"
+        >Career jobs vector created by studiogstock - www.freepik.com</a
+      >
+    </footer>
   </body>
 </html>

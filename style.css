@@ -4,6 +4,17 @@ body {
   padding: 0;
   height: 100%;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.profile-pic-small {
+  height: 30px;
+  width: 30px;
+}
+
+.profile-pic-medium {
+  height: 50px;
+  width: 50px;
 }
 
 body {
@@ -12,17 +23,52 @@ body {
 }
 
 header {
-  background-color: blue;
+  display: grid;
+  background-color: white;
   grid-column: 2 / 3;
+  grid-template-rows: 50px 60%;
+  grid-template-columns: 70% 30%;
+  padding: 10px;
 }
 
+header div {
+  border: 1px solid brown;
+  padding: 10px;
+}
+
+#searchbar {
+  width: 90%;
+  height: 20px;
+  margin-left: 5px;
+}
+
+header .post-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-buttons button {
+  border-radius: 15px;
+  height: 30px;
+  width: 80px;
+  box-shadow: 5px;
+  border: none;
+  background-color: #1992d3;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+}
 main {
-  background-color: red;
+  background-color: wheat;
 }
 
 aside {
   display: grid;
-  background-color: yellowgreen;
+  background-color: #1992d3;
+  color: white;
+  font-weight: bold;
   grid-template-rows: 75px repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
   grid-row: 1 / 4;
@@ -36,7 +82,11 @@ aside div {
   row-gap: 15px;
   align-content: flex-start;
   padding: 10px;
-  border: 1px solid brown;
+}
+
+.sidebar-heading {
+  font-size: 28px;
+  column-gap: 20px;
 }
 
 footer {
