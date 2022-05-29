@@ -115,6 +115,22 @@ header .post-buttons {
 }
 main {
   background-color: #e2e8f0;
+  padding: 25px;
+}
+
+main .projects {
+  background-color: blue;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.projects .card {
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+  height: 200px;
 }
 
 aside {
