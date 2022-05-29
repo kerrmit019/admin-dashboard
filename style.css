@@ -17,6 +17,11 @@ body {
   width: 60px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 body {
   display: grid;
   grid-template: minmax(150px, 150px) 4fr 20px / minmax(220px, 220px) 4fr;
