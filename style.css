@@ -116,23 +116,66 @@ header .post-buttons {
 main {
   background-color: #e2e8f0;
   padding: 25px;
+  display: grid;
+  grid-template-columns: 80% auto;
+  grid-template-rows: 50% auto;
 }
 
 main .projects {
-  background-color: blue;
+  /* background-color: blue; */
   display: grid;
   gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(250px, auto));
+  /* grid-template-rows: repeat(2, 1fr); */
+  padding: 20px;
 }
 
 .projects .card {
   background-color: #ffffff;
   color: black;
-  text-align: center;
   height: 200px;
+  padding: 15px;
+  border-radius: 3px;
+  border-left: #f0b329 solid 5px;
+  display: grid;
+  grid-template-rows: 40px auto 50px;
 }
 
+.card p.title {
+  grid-row: 1/2;
+  font-weight: bold;
+  color: black;
+}
+
+.card p {
+  grid-row: 2 /3;
+}
+
+p {
+  color: lightslategrey;
+}
+
+.like-icons {
+  justify-self: end;
+  align-self: flex-end;
+  gap: 5px;
+}
+
+.like-icons i {
+  padding: 15px;
+  font-size: 20px;
+}
+main .announcements {
+  background-color: rebeccapurple;
+  grid-column: 2/3;
+  grid-row: -3 / -2;
+  /* min-width: 400px; */
+}
+main .trending {
+  background-color: pink;
+  grid-row: -2/ -1;
+  grid-column: 2/3;
+}
 aside {
   display: grid;
   background-color: #1992d3;
