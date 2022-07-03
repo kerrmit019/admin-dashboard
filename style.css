@@ -256,6 +256,11 @@ aside div {
 }
 
 footer {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   grid-column: 2 / 3;
+  background-color: #e2e8f0;
+  /* padding: 10px; */
+  text-align: center;
+  /* padding: 10px 0; */
+  /* margin: 10px 0; */
 }
